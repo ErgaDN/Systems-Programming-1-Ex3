@@ -64,7 +64,7 @@ int similar(char *s, char *t, int n)
         diff++;
         i++;
     }
-    if (diff == 0 || diff == n)
+    if (diff == n)
     {
         return 1;
     }
@@ -101,7 +101,7 @@ void print_similar_words(char *str)
     int lenWord = get_word(word);
     while (lenWord)
     {
-        if (similar(word, str, 1))
+        if (similar(word, str, 1) || similar(word, str, 0))
         {
             printf("%s\n", word);
         } 

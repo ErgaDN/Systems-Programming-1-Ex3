@@ -28,6 +28,5 @@ int insertion_sort(int *arr, int len)
         shift_element(arr + j, count);
         *(arr + j + 1) = key;
     }
-
     return 0;
 }

@@ -36,8 +36,8 @@ int main()
     // printf("%s", word3);
     // // printf("\n");
 
-    char cat[] =  "cat";
-    print_similar_words(cat);
+    // char cat[] =  "cat";
+    // print_similar_words(cat);
 
 
     // printf( "%d",similar("cat", "catj", 1));
@@ -59,25 +59,26 @@ int main()
 
 
     //////// Main start/////////
-    // char searchWord[] = {0};
-    // get_word(searchWord);
+    char searchWord[WORD] = {0};
+    get_word(searchWord);
 
-    // char trush = getchar();
-    // char method = getchar();
-    // trush = getchar();
+  
+    int method = getchar();
+    getchar();
+    getchar();
 
-    // // char a[] = {0};
-    // // get_line(a);
+    // char a[] = {0};
+    // get_line(a);
 
-    // if(method == 'a')
-    // {
-    //     print_lines(searchWord);
-    // } 
+    if(method == 'a')
+    {
+        print_lines(searchWord);
+    } 
 
-    // else if(method == 'b')
-    // {
-    //     print_similar_words(searchWord);
-    // } 
+    else if(method == 'b')
+    {
+        print_similar_words(searchWord);
+    } 
 
     //////// Main end /////////
 

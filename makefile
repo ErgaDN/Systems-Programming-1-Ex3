@@ -1,5 +1,6 @@
 CC = gcc
 FLAGS = -Wall -g
+MAIN = arrayMemoryLeak
 
 
 all: isort txtfind
@@ -21,6 +22,10 @@ main_txtfind.o: main_txtfind.c txtfind.h
 
 txtfind.o: txtfind.c txtfind.h
 	$(CC) $(FLAGS) -c txtfind.c 
+
+valgrind:
+	valgrind --leak-check=full ./$(MAIN)
+
 
 .PHONY: clean all
 
