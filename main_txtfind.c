@@ -8,6 +8,9 @@
 
 int main()
 {
+    // printf("kjh");
+    // char w[WORD] = {0};
+    // printf("%d", get_word(w));
 
     // char word1[WORD] = {0}; 
     // get_word(word1); //cat
@@ -36,15 +39,16 @@ int main()
     char cat[] =  "cat";
     print_similar_words(cat);
 
+
     // printf( "%d",similar("cat", "catj", 1));
-    printf("\n");
+    // printf("\n");
    
 
     // for (int i = 0 ; i < 10 ; i++){
-        char word1[WORD] = {0}; 
+    //     char word1[WORD] = {0}; 
         
-        // get_word(word1); //cat
-        // printf("%s", word1);
+    //     int num = get_word(word1); //cat
+    //     printf("%s, %d", word1, num);
     //     printf("\n");
         
     // }
