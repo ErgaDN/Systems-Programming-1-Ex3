@@ -5,6 +5,8 @@
 #define LINE 256
 #define WORD 30
 
+/**The function receives a line and stores it in the string s.
+ * The function will return the amount of chars actually received.*/
 int get_line(char s[])
 {
     int c, i;
@@ -15,6 +17,8 @@ int get_line(char s[])
     return i;
 }
 
+/**The function receives a word and stores it in the string w.
+ * The function will return the amount of chars actually received.*/
 int get_word(char w[])
 {
     int c, i;
@@ -31,6 +35,7 @@ int get_word(char w[])
     return i;
 }
 
+// The function receives two strings, str1 and str2, and checks whether str2 is contained in str1.
 int substring(char *str1, char *str2)
 {
     if (strstr(str1, str2) != NULL)
@@ -40,6 +45,8 @@ int substring(char *str1, char *str2)
     return 0;
 }
 
+/**The function will receive two strings t s and a number n.
+ * The function will check if it is possible to get from the string S to the string t by omitting n characters.*/
 int similar(char *s, char *t, int n)
 {
     int diff = 0;
@@ -71,7 +78,7 @@ int similar(char *s, char *t, int n)
     return 0;
 }
 
-
+/**The function receives an array and a length and prints the array with the desired length*/
 void printString(char *str, int length)
 {
     for (int i = 0; i < length; i++)
@@ -81,6 +88,7 @@ void printString(char *str, int length)
     printf("\n");
 }
 
+/**The function receives a string, picks up the lines of text, and prints the lines in which the string appears*/
 void print_lines(char *str)
 {
     char line[LINE] = {0};
@@ -95,6 +103,8 @@ void print_lines(char *str)
     }
 }
 
+/**The function receives a string, picks up the words of the text and prints the words similar to the search string up to the 
+ * omission of one letter from the words that appear in the text, including words identical to the search string.*/
 void print_similar_words(char *str)
 {
     char word[WORD] = {0};

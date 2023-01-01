@@ -5,6 +5,11 @@
 #define LENGTHARRAY 50
 
 
+/**
+ * The progrem receives an array and prints it sorted.
+*/
+
+
 int main()
 {
     int i;

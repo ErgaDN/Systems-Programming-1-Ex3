@@ -6,6 +6,10 @@
 #define ENTER 10
 #define TAB 11
 
+/**
+ * The progrem received a search string and a search option, and acts accordingly.
+*/
+
 int main()
 {
     char searchWord[WORD] = {0};
